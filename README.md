@@ -19,7 +19,7 @@ export OPENAI_API_KEY=your_openai_api_key
 Simply type `how` followed by your question in natural language:
 
 ```bash
-how how to install brew on macos
+how to install brew on macos
 ```
 
 ... the response would typically be:
@@ -31,7 +31,7 @@ how how to install brew on macos
 Or ask something like:
 
 ```bash
-how how to create an ed25519 SSH key with a comment
+how to create an ed25519 SSH key with a comment
 ```
 
 ... and the reponse would be:
