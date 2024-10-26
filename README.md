@@ -19,17 +19,26 @@ export OPENAI_API_KEY=your_openai_api_key
 Simply type `how` followed by your question in natural language:
 
 ```bash
-how "how to install brew on macos"
+how how to install brew on macos
 ```
 
-### Example Commands
+... the response would typically be:
 
 ```bash
-how to install brew on macos
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+Or ask something like:
+
 ```bash
-how how to create an ed25519 SSH key
+how how to create an ed25519 SSH key with a comment
+```
+
+... and the reponse would be:
+
+```bash
+ssh-keygen -t ed25519 -C "example@example.com"
+
 ```
 
 `how` will respond with only the necessary command, keeping it concise and to the point.
